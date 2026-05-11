@@ -41,16 +41,16 @@
     </section>
 
     <section class="max-w-4xl mx-auto px-6 mb-16">
-        <div class="bg-white/40 backdrop-blur-md p-4 rounded-3xl shadow-xl border border-white">
+        <div class="bg-black/5 backdrop-blur-md p-2 rounded-3xl shadow-xl border border-white/50">
             <iframe 
-                style="border-radius:12px" 
-                src="https://open.spotify.com/embed/playlist/4I3yIId72oUf4LIDi9xK8J?utm_source=generator" 
                 width="100%" 
-                height="152" 
-                frameBorder="0" 
-                allowfullscreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy">
+                height="180" 
+                src="https://www.youtube.com/embed/videoseries?list=PLhYynapOSwzgMK0QHcS2mhs_X8_vRpKoI" 
+                title="Nuestra Playlist" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                class="rounded-2xl">
             </iframe>
         </div>
     </section>
