@@ -18,17 +18,12 @@
 </head>
 <body class="bg-gradient-to-tr from-rose-100 via-red-50 to-pink-100 min-h-screen font-sans text-gray-900">
 
-    <a href="https://open.spotify.com/playlist/78Lp6uF0U9L6U6U6" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#1DB954] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center gap-2 group">
-        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.503 17.306c-.22.361-.69.474-1.05.254-2.883-1.76-6.503-2.157-10.776-1.18-.41.093-.822-.164-.915-.574-.093-.41.164-.822.574-.915 4.673-1.068 8.665-.615 11.913 1.368.36.22.473.69.254 1.05zm1.47-3.253c-.276.45-.863.593-1.312.317-3.298-2.027-8.324-2.613-12.222-1.429-.508.154-1.04-.136-1.194-.644-.154-.508.136-1.04.644-1.194 4.453-1.353 10.003-.699 13.806 1.634.45.276.593.862.318 1.312zm.126-3.414c-3.953-2.347-10.468-2.564-14.249-1.416-.606.184-1.246-.168-1.43-.774-.184-.606.168-1.246.774-1.43 4.343-1.32 11.536-1.066 16.073 1.628.545.324.726 1.03.402 1.575-.324.544-1.03.725-1.575.402z"/></svg>
-        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 font-bold text-sm uppercase px-1">Nuestra Playlist</span>
-    </a>
-
     <header class="h-screen flex flex-col justify-center items-center text-center p-4">
         <h1 class="font-love text-8xl md:text-9xl text-red-600 drop-shadow-xl animate-pulse">100 Razones</h1>
         <p class="text-gray-500 text-xl italic mt-4">Para la niña que cambió mi mundo</p>
     </header>
 
-    <section class="max-w-6xl mx-auto px-6 mb-24">
+    <section class="max-w-6xl mx-auto px-6 mb-12">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div class="bg-white p-3 rounded-xl shadow-xl rotate-3 hover:rotate-0 transition-all duration-500">
                 <img src="/img/foto1.jpg" class="w-full h-64 object-cover rounded shadow-inner" alt="Recuerdo 1">
@@ -45,117 +40,130 @@
         </div>
     </section>
 
+    <section class="max-w-4xl mx-auto px-6 mb-24">
+        <div class="bg-white/30 backdrop-blur-md p-4 rounded-3xl shadow-lg border border-white">
+            <iframe 
+                style="border-radius:12px" 
+                src="{{ env('SPOTIFY_URL') }}" 
+                width="100%" 
+                height="152" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
     <main class="max-w-7xl mx-auto px-6 pb-24">
         <div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
             @php
                 $todasLasRazones = [
-                  "Porque contigo hasta los días normales se sienten especiales.",
-"Porque tu sonrisa me cambia el ánimo al instante.",
-"Porque siempre encuentras la forma de hacerme reír.",
-"Porque contigo puedo ser yo mismo.",
-"Porque me haces sentir en paz.",
-"Porque tus abrazos se sienten como hogar.",
-"Porque me apoyas incluso en mis peores momentos.",
-"Porque escuchas mis problemas aunque sean repetitivos.",
-"Porque tus ojos tienen algo que me atrapa.",
-"Porque me haces querer ser mejor persona.",
-"Porque cada conversación contigo vale la pena.",
-"Porque contigo el tiempo pasa demasiado rápido.",
-"Porque extraño tu presencia aunque hayan pasado minutos.",
-"Porque tienes una forma hermosa de ver la vida.",
-"Porque me entiendes sin necesidad de hablar.",
-"Porque siempre estás cuando te necesito.",
-"Porque haces que las cosas simples se vuelvan recuerdos inolvidables.",
-"Porque amo tu voz.",
-"Porque tu risa es mi sonido favorito.",
-"Porque me motivas a seguir adelante.",
-"Porque contigo aprendí lo que es amar de verdad.",
-"Porque cada detalle tuyo me encanta.",
-"Porque incluso tus imperfecciones me parecen perfectas.",
-"Porque contigo siento confianza.",
-"Porque me haces sentir amado.",
-"Porque nunca me dejas sentir solo.",
-"Porque eres mi lugar seguro.",
-"Porque contigo puedo hablar de cualquier cosa.",
-"Porque me haces feliz con solo existir.",
-"Porque me das tranquilidad.",
-"Porque tus mensajes alegran mi día.",
-"Porque amo cómo pronuncias mi nombre.",
-"Porque haces que mi corazón lata más rápido.",
-"Porque contigo descubrí nuevas emociones.",
-"Porque siempre encuentras la forma de sorprenderme.",
-"Porque me inspiras.",
-"Porque me haces sentir importante.",
-"Porque cada momento contigo tiene magia.",
-"Porque amo cuando me miras.",
-"Porque me haces sentir comprendido.",
-"Porque siempre tienes paciencia conmigo.",
-"Porque amo compartir mis días contigo.",
-"Porque me haces olvidar los problemas.",
-"Porque contigo todo parece más bonito.",
-"Porque amo tu manera de cuidar a los demás.",
-"Porque tienes un corazón increíble.",
-"Porque tu cariño es sincero.",
-"Porque me haces sentir afortunado.",
-"Porque contigo aprendí el significado de ‘nosotros’.",
-"Porque eres mi persona favorita.",
-"Porque contigo puedo soñar despierto.",
-"Porque tus pequeños detalles significan mucho para mí.",
-"Porque me haces sentir especial sin intentarlo.",
-"Porque amo nuestras conversaciones largas.",
-"Porque contigo nunca me aburro.",
-"Porque me haces sonreír aun en días malos.",
-"Porque siempre encuentras palabras que me tranquilizan.",
-"Porque amo cómo te emocionas por cosas pequeñas.",
-"Porque contigo siento conexión real.",
-"Porque haces que quiera compartir mi futuro contigo.",
-"Porque tus besos son adictivos.",
-"Porque me haces sentir vivo.",
-"Porque amo cada recuerdo que hemos creado.",
-"Porque me aceptas tal y como soy.",
-"Porque contigo puedo hablar de mis miedos.",
-"Porque haces que el amor se sienta fácil.",
-"Porque siempre intentas entenderme.",
-"Porque tu presencia mejora mis días.",
-"Porque contigo aprendí a valorar más la vida.",
-"Porque eres hermosa por dentro y por fuera.",
-"Porque amo cuando te ríes de mis tonterías.",
-"Porque contigo cualquier lugar se siente mejor.",
-"Porque haces que me emocione el futuro.",
-"Porque me das confianza en mí mismo.",
-"Porque amo cuando me abrazas fuerte.",
-"Porque haces que quiera cuidar de ti siempre.",
-"Porque me haces sentir único.",
-"Porque contigo las noches son más tranquilas.",
-"Porque amo compartir música contigo.",
-"Porque siempre logras sacarme una sonrisa.",
-"Porque contigo puedo hablar durante horas.",
-"Porque amo cada parte de tu personalidad.",
-"Porque haces que me enamore más cada día.",
-"Porque eres mi pensamiento favorito.",
-"Porque contigo aprendí a ser más feliz.",
-"Porque amo cómo me miras cuando estoy distraído.",
-"Porque me haces sentir que pertenezco a algún lugar.",
-"Porque contigo los silencios también son cómodos.",
-"Porque amo tus ocurrencias.",
-"Porque haces que mi mundo tenga más color.",
-"Porque contigo todo vale más la pena.",
-"Porque amo la forma en la que me cuidas.",
-"Porque haces que mi corazón se sienta tranquilo.",
-"Porque eres la mejor parte de mis días.",
-"Porque contigo siento amor de verdad.",
-"Porque me haces creer en cosas bonitas.",
-"Porque amo cada instante a tu lado.",
-"Porque eres la casualidad más bonita de mi vida.",
-"Porque simplemente no imagino mi vida sin ti.",
-"Porque te amo más de lo que las palabras pueden explicar."
+                    "Porque contigo hasta los días normales se sienten especiales.",
+                    "Porque tu sonrisa me cambia el ánimo al instante.",
+                    "Porque siempre encuentras la forma de hacerme reír.",
+                    "Porque contigo puedo ser yo mismo.",
+                    "Porque me haces sentir en paz.",
+                    "Porque tus abrazos se sienten como hogar.",
+                    "Porque me apoyas incluso en mis peores momentos.",
+                    "Porque escuchas mis problemas aunque sean repetitivos.",
+                    "Porque tus ojos tienen algo que me atrapa.",
+                    "Porque me haces querer ser mejor persona.",
+                    "Porque cada conversación contigo vale la pena.",
+                    "Porque contigo el tiempo pasa demasiado rápido.",
+                    "Porque extraño tu presencia aunque hayan pasado minutos.",
+                    "Porque tienes una forma hermosa de ver la vida.",
+                    "Porque me entiendes sin necesidad de hablar.",
+                    "Porque siempre estás cuando te necesito.",
+                    "Porque haces que las cosas simples se vuelvan recuerdos inolvidables.",
+                    "Porque amo tu voz.",
+                    "Porque tu risa es mi sonido favorito.",
+                    "Porque me motivas a seguir adelante.",
+                    "Porque contigo aprendí lo que es amar de verdad.",
+                    "Porque cada detalle tuyo me encanta.",
+                    "Porque incluso tus imperfecciones me parecen perfectas.",
+                    "Porque contigo siento confianza.",
+                    "Porque me haces sentir amado.",
+                    "Porque nunca me dejas sentir solo.",
+                    "Porque eres mi lugar seguro.",
+                    "Porque contigo puedo hablar de cualquier cosa.",
+                    "Porque me haces feliz con solo existir.",
+                    "Porque me das tranquilidad.",
+                    "Porque tus mensajes alegran mi día.",
+                    "Porque amo cómo pronuncias mi nombre.",
+                    "Porque haces que mi corazón lata más rápido.",
+                    "Porque contigo descubrí nuevas emociones.",
+                    "Porque siempre encuentras la forma de sorprenderme.",
+                    "Porque me inspiras.",
+                    "Porque me haces sentir importante.",
+                    "Porque cada momento contigo tiene magia.",
+                    "Porque amo cuando me miras.",
+                    "Porque me haces sentir comprendido.",
+                    "Porque siempre tienes paciencia conmigo.",
+                    "Porque amo compartir mis días contigo.",
+                    "Porque me haces olvidar los problemas.",
+                    "Porque contigo todo parece más bonito.",
+                    "Porque amo tu manera de cuidar a los demás.",
+                    "Porque tienes un corazón increíble.",
+                    "Porque tu cariño es sincero.",
+                    "Porque me haces sentir afortunado.",
+                    "Porque contigo aprendí el significado de ‘nosotros’.",
+                    "Porque eres mi persona favorita.",
+                    "Porque contigo puedo soñar despierto.",
+                    "Porque tus pequeños detalles significan mucho para mí.",
+                    "Porque me haces sentir especial sin intentarlo.",
+                    "Porque amo nuestras conversaciones largas.",
+                    "Porque contigo nunca me aburro.",
+                    "Porque me haces sonreír aun en días malos.",
+                    "Porque siempre encuentras palabras que me tranquilizan.",
+                    "Porque amo cómo te emocionas por cosas pequeñas.",
+                    "Porque contigo siento conexión real.",
+                    "Porque haces que quiera compartir mi futuro contigo.",
+                    "Porque tus besos son adictivos.",
+                    "Porque me haces sentir vivo.",
+                    "Porque amo cada recuerdo que hemos creado.",
+                    "Porque me aceptas tal y como soy.",
+                    "Porque contigo puedo hablar de mis miedos.",
+                    "Porque haces que el amor se sienta fácil.",
+                    "Porque siempre intentas entenderme.",
+                    "Porque tu presencia mejora mis días.",
+                    "Porque contigo aprendí a valorar más la vida.",
+                    "Porque eres hermosa por dentro y por fuera.",
+                    "Porque amo cuando te ríes de mis tonterías.",
+                    "Porque contigo cualquier lugar se siente mejor.",
+                    "Porque haces que me emocione el futuro.",
+                    "Porque me das confianza en mí mismo.",
+                    "Porque amo cuando me abrazas fuerte.",
+                    "Porque haces que quiera cuidar de ti siempre.",
+                    "Porque me haces sentir único.",
+                    "Porque contigo las noches son más tranquilas.",
+                    "Porque amo compartir música contigo.",
+                    "Porque siempre logras sacarme una sonrisa.",
+                    "Porque contigo puedo hablar durante horas.",
+                    "Porque amo cada parte de tu personalidad.",
+                    "Porque haces que me enamore más cada día.",
+                    "Porque eres mi pensamiento favorito.",
+                    "Porque contigo aprendí a ser más feliz.",
+                    "Porque amo cómo me miras cuando estoy distraído.",
+                    "Porque me haces sentir que pertenezco a algún lugar.",
+                    "Porque contigo los silencios también son cómodos.",
+                    "Porque amo tus ocurrencias.",
+                    "Porque haces que mi mundo tenga más color.",
+                    "Porque contigo todo vale más la pena.",
+                    "Porque amo la forma en la que me cuidas.",
+                    "Porque haces que mi corazón se sienta tranquilo.",
+                    "Porque eres la mejor parte de mis días.",
+                    "Porque contigo siento amor de verdad.",
+                    "Porque me haces creer en cosas bonitas.",
+                    "Porque amo cada instante a tu lado.",
+                    "Porque eres la casualidad más bonita de mi vida.",
+                    "Porque simplemente no imagino mi vida sin ti.",
+                    "Porque te amo más de lo que las palabras pueden explicar."
                 ];
 
-                // Mezclamos el array completo
                 shuffle($todasLasRazones);
-
-                // Seleccionamos solo las primeras 10 razones del array mezclado
-                $razonesVisibles = array_slice($todasLasRazones, 0, 10);
+                // He aumentado a 100 razones visibles para que las vea todas
+                $razonesVisibles = array_slice($todasLasRazones, 0, 100);
             @endphp
 
             @foreach($razonesVisibles as $razon)
