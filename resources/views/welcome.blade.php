@@ -43,13 +43,13 @@
     <section class="max-w-4xl mx-auto px-6 mb-16">
         <div class="bg-white/40 backdrop-blur-md p-4 rounded-3xl shadow-xl border border-white">
             <iframe 
-                src="https://open.spotify.com/embed/playlist/4I3yIId72oUf4LIDi9xK8J?utm_source=generator" 
+                style="border-radius:12px" 
+                src="https://open.spotify.com/playlist/5p99NGDqrNz3moHHYE3vdT?si=fA8simJcR5e4v9Ix0PFebQ" 
                 width="100%" 
                 height="152" 
                 frameBorder="0" 
                 allowfullscreen="" 
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                style="border-radius:12px;"
                 loading="lazy">
             </iframe>
         </div>
@@ -131,8 +131,4 @@
     </main>
 
     <footer class="py-12 text-center">
-        <p class="font-love text-5xl text-red-500">Te amo infinito</p>
-    </footer>
-
-</body>
-</html>
+        <p class="font-love text-5xl text-red
