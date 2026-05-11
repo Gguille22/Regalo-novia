@@ -26,16 +26,16 @@
     <section class="max-w-6xl mx-auto px-6 mb-12">
         <div class="flex flex-wrap justify-center gap-6">
             <div class="bg-white p-2 rounded-lg shadow-lg rotate-3 hover:rotate-0 transition-transform w-40 md:w-64">
-                <img src="/img/foto1.jpg" class="w-full h-48 md:h-64 object-cover rounded" alt="Recuerdo 1">
+                <img src="/img/foto1.jpg" class="w-full h-48 md:h-64 object-cover rounded shadow-inner" alt="Recuerdo 1">
             </div>
             <div class="bg-white p-2 rounded-lg shadow-lg -rotate-3 hover:rotate-0 transition-transform w-40 md:w-64 mt-4">
-                <img src="/img/foto2.jpg" class="w-full h-48 md:h-64 object-cover rounded" alt="Recuerdo 2">
+                <img src="/img/foto2.jpg" class="w-full h-48 md:h-64 object-cover rounded shadow-inner" alt="Recuerdo 2">
             </div>
             <div class="bg-white p-2 rounded-lg shadow-lg rotate-2 hover:rotate-0 transition-transform w-40 md:w-64">
-                <img src="/img/foto3.jpg" class="w-full h-48 md:h-64 object-cover rounded" alt="Recuerdo 3">
+                <img src="/img/foto3.jpg" class="w-full h-48 md:h-64 object-cover rounded shadow-inner" alt="Recuerdo 3">
             </div>
             <div class="bg-white p-2 rounded-lg shadow-lg -rotate-2 hover:rotate-0 transition-transform w-40 md:w-64 mt-4">
-                <img src="/img/foto4.jpg" class="w-full h-48 md:h-64 object-cover rounded" alt="Recuerdo 4">
+                <img src="/img/foto4.jpg" class="w-full h-48 md:h-64 object-cover rounded shadow-inner" alt="Recuerdo 4">
             </div>
         </div>
     </section>
@@ -44,7 +44,7 @@
         <div class="bg-white/40 backdrop-blur-md p-4 rounded-3xl shadow-xl border border-white">
             <iframe 
                 style="border-radius:12px" 
-                src="https://open.spotify.com/embed/playlist/1Y3Tq56u9KjXUatPq8N9V6" 
+                src="https://open.spotify.com/embed/playlist/4I3yIId72oUf4LIDi9xK8J?utm_source=generator" 
                 width="100%" 
                 height="152" 
                 frameBorder="0" 
@@ -134,7 +134,7 @@
                     "Porque me das confianza en mí mismo.",
                     "Porque amo cuando me abrazas fuerte.",
                     "Porque haces que quiera cuidar de ti siempre.",
-                    "Porque me haces sentir único.",
+                    "Porque me haces sentir unique.",
                     "Porque contigo las noches son más tranquilas.",
                     "Porque amo compartir música contigo.",
                     "Porque siempre logras sacarme una sonrisa.",
