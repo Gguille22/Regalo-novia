@@ -44,7 +44,7 @@
         <div class="bg-white/40 backdrop-blur-md p-4 rounded-3xl shadow-xl border border-white">
             <iframe 
                 style="border-radius:12px" 
-                src="{{ env('SPOTIFY_URL', 'https://open.spotify.com/embed/playlist/5YI97H0N0zZ75A38CisN2E') }}" 
+                src="https://open.spotify.com/embed/playlist/1iN598l76v0kXm65N3Q8p1?utm_source=generator" 
                 width="100%" 
                 height="152" 
                 frameBorder="0" 
@@ -161,7 +161,6 @@
                 ];
 
                 shuffle($todasLasRazones);
-                // Aquí volvemos a mostrar solo 10 aleatorias cada vez que recargue
                 $razonesVisibles = array_slice($todasLasRazones, 0, 10);
             @endphp
 
