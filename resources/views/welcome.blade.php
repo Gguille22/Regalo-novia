@@ -44,7 +44,7 @@
         <div class="bg-white/40 backdrop-blur-md p-4 rounded-3xl shadow-xl border border-white">
             <iframe 
                 style="border-radius:12px" 
-                src="https://open.spotify.com/playlist/5p99NGDqrNz3moHHYE3vdT?si=fA8simJcR5e4v9Ix0PFebQ" 
+                src="https://open.spotify.com/embed/playlist/4I3yIId72oUf4LIDi9xK8J?utm_source=generator" 
                 width="100%" 
                 height="152" 
                 frameBorder="0" 
@@ -131,4 +131,8 @@
     </main>
 
     <footer class="py-12 text-center">
-        <p class="font-love text-5xl text-red
+        <p class="font-love text-5xl text-red-500">Te amo infinito</p>
+    </footer>
+
+</body>
+</html>
