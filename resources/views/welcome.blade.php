@@ -44,7 +44,7 @@
         <div class="bg-white/40 backdrop-blur-md p-4 rounded-3xl shadow-xl border border-white">
             <iframe 
                 style="border-radius:12px" 
-                src="https://open.spotify.com/embed/playlist/1iN598l76v0kXm65N3Q8p1?utm_source=generator" 
+                src="https://open.spotify.com/embed/playlist/1Y3Tq56u9KjXUatPq8N9V6" 
                 width="100%" 
                 height="152" 
                 frameBorder="0" 
