@@ -19,36 +19,35 @@
 <body class="bg-gradient-to-tr from-rose-100 via-red-50 to-pink-100 min-h-screen font-sans text-gray-900">
 
     <header class="h-screen flex flex-col justify-center items-center text-center p-4">
-        <h1 class="font-love text-8xl md:text-9xl text-red-600 drop-shadow-xl animate-pulse">100 Razones</h1>
+        <h1 class="font-love text-7xl md:text-9xl text-red-600 drop-shadow-xl animate-pulse">100 Razones</h1>
         <p class="text-gray-500 text-xl italic mt-4">Para la niña que cambió mi mundo</p>
     </header>
 
     <section class="max-w-6xl mx-auto px-6 mb-12">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div class="bg-white p-3 rounded-xl shadow-xl rotate-3 hover:rotate-0 transition-all duration-500">
-                <img src="/img/foto1.jpg" class="w-full h-64 object-cover rounded shadow-inner" alt="Recuerdo 1">
+        <div class="flex flex-wrap justify-center gap-6">
+            <div class="bg-white p-2 rounded-lg shadow-lg rotate-3 hover:rotate-0 transition-transform w-40 md:w-64">
+                <img src="/img/foto1.jpg" class="w-full h-48 md:h-64 object-cover rounded" alt="Recuerdo 1">
             </div>
-            <div class="bg-white p-3 rounded-xl shadow-xl -rotate-3 hover:rotate-0 transition-all duration-500 mt-8 md:mt-0">
-                <img src="/img/foto2.jpg" class="w-full h-64 object-cover rounded shadow-inner" alt="Recuerdo 2">
+            <div class="bg-white p-2 rounded-lg shadow-lg -rotate-3 hover:rotate-0 transition-transform w-40 md:w-64 mt-4">
+                <img src="/img/foto2.jpg" class="w-full h-48 md:h-64 object-cover rounded" alt="Recuerdo 2">
             </div>
-            <div class="bg-white p-3 rounded-xl shadow-xl rotate-2 hover:rotate-0 transition-all duration-500">
-                <img src="/img/foto3.jpg" class="w-full h-64 object-cover rounded shadow-inner" alt="Recuerdo 3">
+            <div class="bg-white p-2 rounded-lg shadow-lg rotate-2 hover:rotate-0 transition-transform w-40 md:w-64">
+                <img src="/img/foto3.jpg" class="w-full h-48 md:h-64 object-cover rounded" alt="Recuerdo 3">
             </div>
-            <div class="bg-white p-3 rounded-xl shadow-xl -rotate-2 hover:rotate-0 transition-all duration-500 mt-8 md:mt-0">
-                <img src="/img/foto4.jpg" class="w-full h-64 object-cover rounded shadow-inner" alt="Recuerdo 4">
+            <div class="bg-white p-2 rounded-lg shadow-lg -rotate-2 hover:rotate-0 transition-transform w-40 md:w-64 mt-4">
+                <img src="/img/foto4.jpg" class="w-full h-48 md:h-64 object-cover rounded" alt="Recuerdo 4">
             </div>
         </div>
     </section>
 
-    <section class="max-w-4xl mx-auto px-6 mb-24">
-        <div class="bg-white/30 backdrop-blur-md p-4 rounded-3xl shadow-lg border border-white">
+    <section class="max-w-4xl mx-auto px-6 mb-16">
+        <div class="bg-white/40 backdrop-blur-md p-4 rounded-3xl shadow-xl border border-white">
             <iframe 
                 style="border-radius:12px" 
-                src="{{ env('SPOTIFY_URL') }}" 
+                src="{{ env('SPOTIFY_URL', 'https://open.spotify.com/embed/playlist/5YI97H0N0zZ75A38CisN2E') }}" 
                 width="100%" 
                 height="152" 
                 frameBorder="0" 
-                allowfullscreen="" 
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                 loading="lazy">
             </iframe>
@@ -56,7 +55,7 @@
     </section>
 
     <main class="max-w-7xl mx-auto px-6 pb-24">
-        <div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             @php
                 $todasLasRazones = [
                     "Porque contigo hasta los días normales se sienten especiales.",
@@ -162,20 +161,26 @@
                 ];
 
                 shuffle($todasLasRazones);
-                // He aumentado a 100 razones visibles para que las vea todas
-                $razonesVisibles = array_slice($todasLasRazones, 0, 100);
+                // Aquí volvemos a mostrar solo 10 aleatorias cada vez que recargue
+                $razonesVisibles = array_slice($todasLasRazones, 0, 10);
             @endphp
 
             @foreach($razonesVisibles as $razon)
-                <div class="break-inside-avoid bg-white/50 backdrop-blur-sm p-8 rounded-3xl shadow-sm border border-white hover:shadow-xl transition-all duration-300">
-                    <p class="text-gray-800 text-lg font-medium leading-relaxed italic">"{{ $razon }}"</p>
-                    <div class="mt-4 text-red-300 text-right">❤️</div>
+                <div class="bg-white/60 backdrop-blur-sm p-6 rounded-2xl shadow-sm border border-white hover:shadow-md transition-all">
+                    <p class="text-gray-800 font-medium italic">"{{ $razon }}"</p>
+                    <div class="mt-2 text-red-400 text-sm">❤️</div>
                 </div>
             @endforeach
         </div>
+        
+        <div class="text-center mt-12">
+            <button onclick="window.location.reload()" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform hover:scale-105">
+                Ver otras razones ✨
+            </button>
+        </div>
     </main>
 
-    <footer class="py-20 text-center">
+    <footer class="py-12 text-center">
         <p class="font-love text-5xl text-red-500">Te amo infinito</p>
     </footer>
 
